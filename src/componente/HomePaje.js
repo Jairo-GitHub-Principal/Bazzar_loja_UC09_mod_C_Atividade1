@@ -25,8 +25,21 @@ class Home extends Component{
                     
                 <View style={containers.containerSecundarios} >
                     <TouchableOpacity>
-                <ImageBackground source={imageLinkDestaque} style={{width:'100%', height:150}}>
-                    <Text style={[containers.coresTextoTitulos,containers.textosCentralizados]}>ares de destaque</Text>
+                   
+                <ImageBackground source={imageLinkDestaque} style={{width:'100%', height:150,flexDirection:'row', justifyContent:'space-between'}}>
+                   
+                   
+                   <View  >
+                    <Text style={containers.testoTituloLinkProdutos}>Principais </Text>
+                    <Text style={containers.testoTituloLinkProdutos}>     Ofertas</Text>
+                    </View>
+
+                     
+                   <View style={{marginTop:'30%'}} >
+                    <Text style={containers.testoTituloLinkProdutos}>50% OFF </Text>
+                 
+                    </View>
+
                 </ImageBackground>
                 </TouchableOpacity>
                 </View>
@@ -34,22 +47,35 @@ class Home extends Component{
                 <View style={containers.containerSecundarios}>
                     <TouchableOpacity>
                     <ImageBackground source = {imageLinkModaMasculina} style={{width:'100%', height:150}}>
-                    <Text  style={[containers.coresTextoTitulos,containers.textosCentralizados]}>moda masculina</Text>
+                        <View style={{marginTop:'30%'}}>
+                    <Text  style={[containers.testoTituloLinkProdutos,containers.textosCentralizados]}>moda masculina</Text>
+                    </View>
                     </ImageBackground>
                     </TouchableOpacity>
                 </View>
                 
                 <View style={[containers.containerSecundarios]}>
                     <TouchableOpacity>
-                    <ImageBackground source = {imageLinkModaFeminina} style={{width:'100%', height:150}}>
-                    <Text  style={[containers.coresTextoTitulos,containers.textosCentralizados]}>moda feminina</Text>
+                    <ImageBackground source = {imageLinkModaFeminina} style={{width:'100%', height:150,}}>
+                        <View style={{marginTop:'30%'}}>
+                    <Text  style={[containers.testoTituloLinkProdutos,containers.textosCentralizados]}>moda feminina</Text>
+                    </View>
                     </ImageBackground>
                     </TouchableOpacity>
                 </View>
                 
                 
-                <View style={containers.containerSecundarios}>
-                <Text  style={[containers.coresTextoTitulos,containers.textosCentralizados]}>redes e cartoes que a loja aceita</Text>
+                <View style={containers.containerDaRedeECartoes}>
+                    <View style={{flexDirection:'row', justifyContent:'space-around'}}>
+                        <View>
+                        <Text  style={{fontSize:14,color:'white'}}>Siga nos</Text>
+                        </View>
+
+                        <View>
+                        <Text  style={{fontSize:14,color:'white'}}>Aceitamos todos</Text>
+                        </View>
+                       </View> 
+                   
                     <View style={containers.alinhamentoVertical}>
 
                     
@@ -71,7 +97,7 @@ class Home extends Component{
               
                 <View style={[containers.containerSecundarios]}>
                     
-                    <Text    style={[containers.coresTextoTitulos,containers.textosCentralizados]}>menu e barra de pesquisa</Text>
+                  
                     <View style={{width:'100%', height:50,flexDirection:'row',justifyContent:'space-between',padding:10}}>
                         <View>
                             <TouchableOpacity>
